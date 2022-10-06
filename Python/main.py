@@ -1,13 +1,9 @@
 from car import Car
+from account import Account
 
 if __name__ == "__main__":
     print("Hola mundo")
-    car = Car()
-    car.licence = "AMS244"
-    car.driver = "Juan Assa"
-    print(vars(car))
     
-    car2 = Car()
-    car2.licence = "ABB200"
-    car2.driver = "Mocho"
-    print(vars(car2))
+    car = Car("AMS244", Account("Juan Assa", "34122"))
+    print(vars(car))
+    print(vars(car.driver))
